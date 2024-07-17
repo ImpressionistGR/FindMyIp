@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2024-07-16",
+    "temperatureC": 15,
+    "temperatureF": 58,
+    "summary": "Chilly"
+  },
+  {
+    "date": "2024-07-17",
+    "temperatureC": 17,
+    "temperatureF": 62,
+    "summary": "Freezing"
+  },
+  {
+    "date": "2024-07-18",
+    "temperatureC": -6,
+    "temperatureF": 22,
+    "summary": "Chilly"
+  },
+  {
+    "date": "2024-07-19",
+    "temperatureC": 39,
+    "temperatureF": 102,
+    "summary": "Chilly"
+  },
+  {
+    "date": "2024-07-20",
+    "temperatureC": -13,
+    "temperatureF": 9,
+    "summary": "Mild"
+  }
+]

@@ -1,0 +1,12 @@
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\bin\Debug\net8.0\FindMyIp.Core.deps.json
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\bin\Debug\net8.0\FindMyIp.Core.dll
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\bin\Debug\net8.0\FindMyIp.Core.pdb
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.csproj.AssemblyReference.cache
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.AssemblyInfoInputs.cache
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.AssemblyInfo.cs
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.csproj.CoreCompileInputs.cache
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.dll
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\refint\FindMyIp.Core.dll
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\FindMyIp.Core.pdb
+C:\Users\pc\RiderProjects\FindMyIp\FindMyIp.Core\obj\Debug\net8.0\ref\FindMyIp.Core.dll
