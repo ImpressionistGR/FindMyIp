@@ -1,8 +1,7 @@
-﻿using StackExchange.Redis;
-
-namespace FindMyIp.Caching;
+﻿namespace FindMyIp.Caching;
 
 using System;
+using StackExchange.Redis;
 using System.Threading.Tasks;
 
 /// <summary>
@@ -23,7 +22,7 @@ public interface ICache
     /// </summary>
     /// <returns></returns>
     ITransaction CreateTransaction();
-    
+
     /// <summary>
     ///
     /// </summary>
@@ -48,7 +47,7 @@ public interface ICache
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     Task<T> SetAlwaysAsync<T>(string key, T value, TimeSpan ttl);
-    
+
     /// <summary>
     /// 
     /// </summary>

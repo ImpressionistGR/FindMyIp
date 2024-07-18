@@ -118,14 +118,14 @@ public partial class FindMyIpService : IFindMyIpService
                 missingCodes.Add(cc);
                 continue;
             }
-        
+
             var countryDetails = await _cache.GetAsync<Dto.CountryDetails>(Key.GetCountryDetailsKey(cc));
-        
+
             if (countryDetails.IsError) {
                 missingCodes.Add(cc);
                 continue;
             }
-        
+
             countryReportList.Add(new Dto.CountryReport {
                 AddressesCount = addressesCount.Data,
                 CountryName = countryDetails.Data.CountryName,
@@ -175,7 +175,7 @@ public partial class FindMyIpService : IFindMyIpService
 
         return Result.Success(list);
     }
-    
+
     /// <summary>
     /// 
     /// </summary>

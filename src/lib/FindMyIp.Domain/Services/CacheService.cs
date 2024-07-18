@@ -1,13 +1,12 @@
-﻿using FindMyIp.Extensions;
-using StackExchange.Redis;
-
-namespace FindMyIp.Domain.Services;
+﻿namespace FindMyIp.Domain.Services;
 
 using System;
 using System.Net;
+using StackExchange.Redis;
 using System.Threading.Tasks;
 
 using FindMyIp.Caching;
+using FindMyIp.Extensions;
 using FindMyIp.Domain.Interfaces;
 
 /// <summary>

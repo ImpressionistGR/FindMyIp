@@ -1,8 +1,8 @@
-﻿using FindMyIp.Domain.Dto;
-
-namespace FindMyIp.Domain.Providers;
+﻿namespace FindMyIp.Domain.Providers;
 
 using System.Threading.Tasks;
+
+using FindMyIp.Domain.Dto;
 
 /// <summary>
 /// 

@@ -19,7 +19,7 @@ public static class Extensions
     {
         return (int)code is (>= 200 and < 300);
     }
-    
+
     /// <summary>
     ///
     /// </summary>

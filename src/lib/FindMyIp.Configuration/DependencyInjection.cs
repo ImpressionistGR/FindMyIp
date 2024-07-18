@@ -3,7 +3,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using FindMyIp.Core.Config;
+using FindMyIp.Config;
 using FindMyIp.Domain.Config;
 using FindMyIp.Infrastructure.Config;
 

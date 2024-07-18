@@ -1,6 +1,4 @@
-﻿using System.Net.Http;
-
-namespace FindMyIp.Domain.Config;
+﻿namespace FindMyIp.Domain.Config;
 
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +11,11 @@ using FindMyIp.Domain.Interfaces;
 /// </summary>
 public static class DependencyInjection
 {
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name="services"></param>
+    /// <returns></returns>
     public static IServiceCollection AddDomain(this IServiceCollection services)
     {
         services.AddScoped<ICacheService, CacheService>();

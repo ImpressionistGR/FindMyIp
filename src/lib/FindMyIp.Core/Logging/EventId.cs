@@ -19,28 +19,31 @@ public enum EventId
     ///
     /// </summary>
     InternalServerError = 500,
-    
+
     /// <summary>
     /// 
     /// </summary>
     RepositoryTryCommitFailed = 600,
-    
+
     /* FindMyIpService */
-    
+
     /// <summary>
     /// 
     /// </summary>
     FindMyIpServiceGetLocationValidationError = 1000,
-    
+
     /// <summary>
     /// 
     /// </summary>
     Ip2CProviderGetLocationValidationError = 1001,
-    
+
     /// <summary>
     /// /
     /// </summary>
     Ip2CProviderGetLocationRequestFailed = 1002,
-    
+
+    /// <summary>
+    ///
+    /// </summary>
     FindMyIpServiceGetReportValidationError = 1003
 }

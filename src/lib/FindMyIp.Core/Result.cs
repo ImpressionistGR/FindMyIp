@@ -15,17 +15,17 @@ public class Result<T> : IResult<T>
     /// 
     /// </summary>
     public T Data { get; }
-    
+
     /// <summary>
     /// 
     /// </summary>
     public EventId EventId { get; }
-    
+
     /// <summary>
     /// 
     /// </summary>
     public string ErrorMessage { get; }
-    
+
     /// <summary>
     ///
     /// </summary>

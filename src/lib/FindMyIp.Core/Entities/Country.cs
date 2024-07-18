@@ -1,7 +1,6 @@
 ﻿namespace FindMyIp.Entities;
 
 using System;
-using System.ComponentModel.DataAnnotations;
 
 /// <summary>
 /// 

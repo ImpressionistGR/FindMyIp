@@ -9,12 +9,12 @@ public class IpLocation
     /// 
     /// </summary>
     public string CountryName { get; set; }
-    
+
     /// <summary>
     /// 
     /// </summary>
     public string TwoLetterCode { get; set; }
-    
+
     /// <summary>
     /// 
     /// </summary>

@@ -1,5 +1,8 @@
 ﻿namespace FindMyIp.Infrastructure.Data;
 
+/// <summary>
+///
+/// </summary>
 public sealed class AppRepository : EfRepository
 {
     /// <summary>

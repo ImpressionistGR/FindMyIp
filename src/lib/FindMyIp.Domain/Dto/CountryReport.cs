@@ -1,7 +1,5 @@
 ﻿namespace FindMyIp.Domain.Dto;
 
-using System;
-
 /// <summary>
 /// 
 /// </summary>

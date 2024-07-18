@@ -1,7 +1,6 @@
 ﻿namespace FindMyIp.Entities;
 
 using System;
-using System.ComponentModel.DataAnnotations;
 
 /// <summary>
 /// 
@@ -39,6 +38,9 @@ public class IpAddress
 
     #region Navigation
 
+    /// <summary>
+    ///
+    /// </summary>
     public virtual Country Country { get; set; }
 
     #endregion

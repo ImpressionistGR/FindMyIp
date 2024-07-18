@@ -67,7 +67,7 @@ public class Ip2CProvider : IIp2CProvider
     /// </summary>
     /// <param name="content"></param>
     /// <returns></returns>
-    private static IResult<Dto.IpLocation> ValidateContent(string content) 
+    private static IResult<Dto.IpLocation> ValidateContent(string content)
     {
         if (content == null) {
             return Result<Dto.IpLocation>.Error(HttpStatusCode.PreconditionFailed,

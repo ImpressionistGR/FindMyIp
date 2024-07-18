@@ -25,22 +25,22 @@ public interface IResult
     /// </summary>
     [JsonIgnore]
     bool IsError { get; }
-    
+
     /// <summary>
     /// 
     /// </summary>
     bool IsSuccess { get; }
-    
+
     /// <summary>
     /// 
     /// </summary>
     string ErrorMessage { get; }
-    
+
     /// <summary>
     /// 
     /// </summary>
     Logging.EventId EventId { get; }
-    
+
     /// <summary>
     /// 
     /// </summary>

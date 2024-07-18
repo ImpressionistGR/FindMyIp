@@ -1,12 +1,11 @@
 ﻿namespace FindMyIp.Infrastructure.Caching;
 
 using System;
+using StackExchange.Redis;
 using System.Threading.Tasks;
 
 using FindMyIp.Caching;
 using FindMyIp.Extensions;
-
-using StackExchange.Redis;
 
 /// <summary>
 /// 
@@ -26,7 +25,7 @@ public class RedisCache : ICache
     {
         _db = db;
     }
-    
+
     /// <summary>
     /// 
     /// </summary>
@@ -58,7 +57,7 @@ public class RedisCache : ICache
     {
         return await SetAsync(key, value, ttl, When.Always);
     }
-    
+
     /// <summary>
     /// 
     /// </summary>
@@ -71,7 +70,7 @@ public class RedisCache : ICache
     {
         return await SetAsync(key, value, ttl, When.NotExists);
     }
-    
+
     /// <summary>
     ///
     /// </summary>
@@ -102,7 +101,7 @@ public class RedisCache : ICache
 
         return await _db.KeyDeleteAsync(key);
     }
-    
+
     /// <summary>
     ///
     /// </summary>

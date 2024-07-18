@@ -1,6 +1,4 @@
-﻿using StackExchange.Redis;
-
-namespace FindMyIp.Domain.Interfaces;
+﻿namespace FindMyIp.Domain.Interfaces;
 
 using System;
 using System.Threading.Tasks;
@@ -61,6 +59,6 @@ public interface ICacheService
     /// <param name="lastUpdated"></param>
     /// <param name="oldCountryCode"></param>
     /// <returns></returns>
-    Task<IResult<object>> UpdateAlwaysAsync(string ip, Dto.IpLocation updatedInfo, DateTime lastUpdated, 
+    Task<IResult<object>> UpdateAlwaysAsync(string ip, Dto.IpLocation updatedInfo, DateTime lastUpdated,
         string oldCountryCode);
 }

@@ -1,9 +1,8 @@
-﻿using System.Linq;
-using Microsoft.EntityFrameworkCore;
+﻿namespace FindMyIp.Domain.Services;
 
-namespace FindMyIp.Domain.Services;
-
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 using FindMyIp.Data;
 using FindMyIp.Domain.Providers;

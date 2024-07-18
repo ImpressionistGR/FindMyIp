@@ -1,13 +1,18 @@
-﻿using FindMyIp.Domain.Interfaces;
+﻿namespace FindMyIp.Api.Controllers;
+
 using Microsoft.AspNetCore.Mvc;
 
-namespace FindMyIp.Api.Controllers;
+using FindMyIp.Domain.Interfaces;
 
 [Route("[controller]")]
 public class FindMyIpController : Controller
 {
     private readonly IFindMyIpService _findMyIpService;
 
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name="findMyIpService"></param>
     public FindMyIpController(IFindMyIpService findMyIpService)
     {
         _findMyIpService = findMyIpService;
@@ -18,9 +23,11 @@ public class FindMyIpController : Controller
     {
         var result = await _findMyIpService.GetLocationAsync(ip);
 
-        return result.IsSuccess
-            ? Ok(result.Data)
-            : StatusCode((int)result.ErrorCode, result.ErrorMessage);
+        if (result.IsError) {
+            return StatusCode((int)result.ErrorCode, result.ErrorMessage);
+        }
+
+        return Ok(result.Data);
     }
 
     [HttpGet("report/{countryCodes}")]
@@ -28,8 +35,10 @@ public class FindMyIpController : Controller
     {
         var result = await _findMyIpService.GetReportAsync(countryCodes);
 
-        return result.IsSuccess
-            ? Ok(result.Data)
-            : StatusCode((int)result.ErrorCode, result.ErrorMessage);
+        if (result.IsError) {
+            return StatusCode((int)result.ErrorCode, result.ErrorMessage);
+        }
+
+        return Ok(result.Data);
     }
 }

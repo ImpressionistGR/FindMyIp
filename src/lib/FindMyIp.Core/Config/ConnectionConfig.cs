@@ -1,4 +1,4 @@
-﻿namespace FindMyIp.Core.Config;
+﻿namespace FindMyIp.Config;
 
 using Microsoft.Extensions.Configuration;
 

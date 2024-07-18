@@ -1,7 +1,4 @@
-﻿using FindMyIp.Domain.Dto;
-using Microsoft.Data.SqlClient;
-
-namespace FindMyIp.Infrastructure.Data;
+﻿namespace FindMyIp.Infrastructure.Data;
 
 using System;
 using System.Net;
@@ -22,7 +19,7 @@ public class EfRepository : IRepository
     /// 
     /// </summary>
     private readonly DbContext _dbContext;
-    
+
     /// <summary>
     ///
     /// </summary>
@@ -140,7 +137,7 @@ public class EfRepository : IRepository
     {
         return _dbContext.Set<T>().AsQueryable();
     }
-    
+
     /// <summary>
     ///
     /// </summary>
@@ -162,7 +159,7 @@ public class EfRepository : IRepository
     {
         return await _dbContext.Set<T>().FindAsync(id);
     }
-    
+
     /// <summary>
     ///
     /// </summary>
