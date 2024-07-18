@@ -56,7 +56,7 @@ public class Ip2CProvider : IIp2CProvider
 
         } catch (Exception e) {
             return Result.Error<Dto.IpLocation>(HttpStatusCode.BadGateway,
-                null, EventId.Ip2CProviderGetLocationRequestFailed);
+                e.Message, EventId.Ip2CProviderGetLocationRequestFailed);
         }
 
         return Result.Success(vresult.Data);

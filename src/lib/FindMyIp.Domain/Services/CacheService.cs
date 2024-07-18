@@ -39,13 +39,13 @@ public class CacheService : ICacheService
     {
         try {
             var transaction = _cache.CreateTransaction();
-            transaction.StringSetAsync(ip, ipLocation.ToJson(), TimeSpan.MaxValue, When.Always);
-            transaction.StringIncrementAsync(Key.GetAddressesCountKey(ipLocation.TwoLetterCode));
+            _ = transaction.StringSetAsync(ip, ipLocation.ToJson(), TimeSpan.MaxValue, When.Always);
+            _ = transaction.StringIncrementAsync(Key.GetAddressesCountKey(ipLocation.TwoLetterCode));
             var countryDetails = new Dto.CountryDetails {
                 CountryName = ipLocation.CountryName,
                 LastAddressUpdated = lastUpdated
             };
-            transaction.StringSetAsync(Key.GetCountryDetailsKey(ipLocation.TwoLetterCode),
+            _ = transaction.StringSetAsync(Key.GetCountryDetailsKey(ipLocation.TwoLetterCode),
                 countryDetails.ToJson(), TimeSpan.MaxValue, When.Always);
             var committed = await transaction.ExecuteAsync();
             return committed
@@ -76,13 +76,13 @@ public class CacheService : ICacheService
                 LastAddressUpdated = lastUpdated
             };
 
-            transaction.StringSetAsync(Key.GetCountryDetailsKey(updatedInfo.TwoLetterCode),
+            _ = transaction.StringSetAsync(Key.GetCountryDetailsKey(updatedInfo.TwoLetterCode),
                 countryDetails.ToJson(), TimeSpan.MaxValue, When.Always);
 
             if (oldCountryCode != updatedInfo.TwoLetterCode) {
-                transaction.StringSetAsync(ip, updatedInfo.ToJson(), TimeSpan.MaxValue, When.Always);
-                transaction.StringIncrementAsync(Key.GetAddressesCountKey(updatedInfo.TwoLetterCode));
-                transaction.StringIncrementAsync(Key.GetAddressesCountKey(oldCountryCode), -1);
+                _ = transaction.StringSetAsync(ip, updatedInfo.ToJson(), TimeSpan.MaxValue, When.Always);
+                _ = transaction.StringIncrementAsync(Key.GetAddressesCountKey(updatedInfo.TwoLetterCode));
+                _ = transaction.StringIncrementAsync(Key.GetAddressesCountKey(oldCountryCode), -1);
             }
 
             var committed = await transaction.ExecuteAsync();
