@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FindMyIp.Domain\FindMyIp.Domain.csproj" />
+      <ProjectReference Include="..\..\src\lib\FindMyIp.Domain\FindMyIp.Domain.csproj" />
     </ItemGroup>
 
 </Project>

@@ -18,10 +18,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FindMyIp.Configuration\FindMyIp.Configuration.csproj" />
-      <ProjectReference Include="..\FindMyIp.Core\FindMyIp.Core.csproj" />
-      <ProjectReference Include="..\FindMyIp.Domain\FindMyIp.Domain.csproj" />
-      <ProjectReference Include="..\FindMyIp.Infrastructure\FindMyIp.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\lib\FindMyIp.Configuration\FindMyIp.Configuration.csproj" />
+      <ProjectReference Include="..\..\lib\FindMyIp.Core\FindMyIp.Core.csproj" />
+      <ProjectReference Include="..\..\lib\FindMyIp.Domain\FindMyIp.Domain.csproj" />
+      <ProjectReference Include="..\..\lib\FindMyIp.Infrastructure\FindMyIp.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
